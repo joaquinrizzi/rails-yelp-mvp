@@ -1,0 +1,13 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+      <h1><%= title %></h1>
+      <%= simple_form_for restaurant do |f| %>
+        <%= f.input :name %>
+        <%= f.input :address %>
+        <%= f.input :category %>
+        <%= f.button :submit %>
+      <% end %>
+    </div>
+  </div>
+</div>
